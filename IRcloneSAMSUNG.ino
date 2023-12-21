@@ -13,14 +13,15 @@ unsigned int  VOLUP[67] = {4450,4500, 550,1650, 550,1700, 550,1650, 550,600, 550
 unsigned int  VOLDOWN[67] = {4500,4450, 550,1700, 550,1650, 550,1700, 550,550, 550,550, 550,600, 550,550, 550,550, 550,1700, 550,1650, 550,1700, 550,550, 550,550, 550,600, 550,550, 550,600, 500,1700, 550,1650, 550,600, 550,1650, 550,550, 550,600, 550,550, 550,550, 550,550, 550,600, 550,1650, 550,550, 550,1700, 550,1700, 550,1650, 550,1700, 500};  // SAMSUNG E0E0D02F
 
 
-IRsend irsend;
-int freq = 38;
+IRsend IRsendCODE;
+int freq = 38; //freq_ir
+int length = 67;
 
 void setup(){
-  //nop
+  //empty
 }
 
 void loop(){
-  //irsend.sendRaw(ON, 67, freq);
-  delay(1000);
+  IRsendCODE.sendRaw(/*put here the button you want to simulate (use the name of the corresponding array)*/, length, freq);
+  delay(10000);
 }
