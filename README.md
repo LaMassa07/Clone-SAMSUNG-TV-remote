@@ -1,4 +1,4 @@
-# Clone-SAMSUNG-TV-remote <img src="https://img.shields.io/badge/TV-Remote-blue?logo=samsung&logoColor=white"/>
+# SAMSUNG TV Remote Clone <img src="https://img.shields.io/badge/TV-Remote-blue?logo=samsung&logoColor=white"/>
 An arduino code that simulate a TV remote. 
 
 <br>
